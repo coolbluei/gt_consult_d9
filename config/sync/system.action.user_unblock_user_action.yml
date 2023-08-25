@@ -1,4 +1,4 @@
-uuid: 80967906-b9df-4c30-902b-af9fdfd562ae
+uuid: 001d531d-60e7-4344-a0a6-3b301bb8c12c
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: QigaEH3uZQ1ACII6xP_c8Vhh6vcxJxqTqFEwMY5E83c
 id: user_unblock_user_action
-label: 'Unblock current user'
+label: 'Unblock the selected user(s)'
 type: user
 plugin: user_unblock_user_action
 configuration: {  }

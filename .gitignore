@@ -33,6 +33,11 @@
 *.sql
 *.sql.gz
 *.mysql.gz
+*.zip
 db/
 
-web/legacy
+web/legacy/
+web/private/
+private/
+private:/
+httpdocs/
