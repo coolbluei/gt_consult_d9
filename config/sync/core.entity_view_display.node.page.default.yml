@@ -38,8 +38,8 @@ third_party_settings:
                     class: ''
               context_mapping:
                 entity: layout_builder.entity
-            weight: 1
             additional: {  }
+            weight: 1
         third_party_settings: {  }
   layout_builder_restrictions:
     entity_view_mode_restriction:

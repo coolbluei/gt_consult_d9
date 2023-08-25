@@ -1,4 +1,4 @@
-uuid: aca4ca2c-2602-49cb-859d-ee3a16ecba56
+uuid: 412242bc-d2c7-4d5c-949f-128dd998a026
 langcode: en
 status: true
 dependencies:
@@ -6,13 +6,12 @@ dependencies:
     - filter.format.basic_html
   module:
     - contact
-    - file
     - filter
     - media
     - shortcut
     - system
 _core:
-  default_config_hash: eyJWjhYZZoMIRKl4QFG_o2tUt0PHthhcKyuI6hlmN3A
+  default_config_hash: BfwZK_wh0By7yJZavcUSS9QOBYv_mYoC4im8I3A3X9M
 id: authenticated
 label: 'Authenticated user'
 weight: 1
@@ -21,6 +20,5 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'delete own files'
   - 'use text format basic_html'
   - 'view media'

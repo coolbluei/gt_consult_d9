@@ -33,8 +33,6 @@ content:
     settings:
       image_style: large
       image_link: ''
-      image_loading:
-        attribute: lazy
     third_party_settings: {  }
     label: hidden
   field_tags:

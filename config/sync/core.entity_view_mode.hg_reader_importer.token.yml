@@ -1,0 +1,10 @@
+uuid: 0388904f-e689-4b96-bc59-dbc3c08c1e49
+langcode: en
+status: true
+dependencies:
+  module:
+    - hg_reader
+id: hg_reader_importer.token
+label: Token
+targetEntityType: hg_reader_importer
+cache: true
