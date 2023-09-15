@@ -5438,7 +5438,7 @@
         },
         {
             "name": "gt/gt_profile",
-            "version": "dev-master",
+            "version": "dev-feature/Drupal10",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_profile",
@@ -5452,7 +5452,7 @@
         },
         {
             "name": "gt/gt_theme",
-            "version": "dev-master",
+            "version": "dev-feature/Drupal10",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_theme",
@@ -5466,7 +5466,7 @@
         },
         {
             "name": "gt/gt_tools",
-            "version": "dev-master",
+            "version": "dev-feature/Drupal10",
             "dist": {
                 "type": "path",
                 "url": "gt/gt_tools",
@@ -5480,7 +5480,7 @@
         },
         {
             "name": "gt/hg_reader",
-            "version": "dev-master",
+            "version": "dev-feature/Drupal10",
             "dist": {
                 "type": "path",
                 "url": "gt/hg_reader",

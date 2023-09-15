@@ -1,4 +1,4 @@
-name: consult9
+name: consult10
 recipe: 'drupal8'
 config:
   php: '8.1'
@@ -11,6 +11,6 @@ services:
   appserver:
     overrides:
       environment:
-        DRUSH_OPTIONS_URI: "https://consult9.lndo.site"
+        DRUSH_OPTIONS_URI: "https://consult10.lndo.site"
   pma:
     type: phpmyadmin
