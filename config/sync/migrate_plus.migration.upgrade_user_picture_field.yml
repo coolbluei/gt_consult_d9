@@ -25,6 +25,12 @@ process:
     -
       plugin: get
       source: constants/entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
   field_name:
     -
       plugin: get
@@ -44,4 +50,5 @@ destination:
       - image
 migration_dependencies:
   required: {  }
-  optional: {  }
+  optional:
+    - upgrade_d7_paragraphs_type

@@ -25,6 +25,12 @@ process:
     -
       plugin: get
       source: type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
   bundle:
     -
       plugin: get
@@ -54,3 +60,4 @@ migration_dependencies:
   optional:
     - upgrade_d7_node_type
     - upgrade_d7_taxonomy_vocabulary
+    - upgrade_d7_paragraphs_type

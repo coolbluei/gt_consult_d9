@@ -1,0 +1,10 @@
+uuid: 7e4ae7d2-3764-48c0-85f0-ea7bf3ff0e84
+langcode: en
+status: true
+dependencies: {  }
+id: group_files_od
+label: 'Group Files OD'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Group Files OD'
+behavior_plugins: {  }

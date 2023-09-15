@@ -1,0 +1,23 @@
+uuid: 8d601735-9f80-4eac-ab64-478d278f39e3
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+id: paragraph.field_group_file_res_cm
+field_name: field_group_file_res_cm
+entity_type: paragraph
+type: file
+settings:
+  target_type: file
+  display_field: true
+  display_default: true
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

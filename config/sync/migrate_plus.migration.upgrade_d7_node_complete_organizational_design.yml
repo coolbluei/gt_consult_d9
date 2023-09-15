@@ -104,8 +104,34 @@ process:
       source: field_link_resource
   field_group_file_resources_od:
     -
-      plugin: get
+      plugin: sub_process
       source: field_group_file_resources_od
+      process:
+        target_id:
+          -
+            plugin: paragraphs_lookup
+            tags: 'Paragraphs Content'
+            source: value
+          -
+            plugin: extract
+            index:
+              - id
+        target_revision_id:
+          -
+            plugin: paragraphs_lookup
+            tags:
+              - 'Paragraphs Revisions Content'
+              - 'Paragraphs Content'
+            tag_ids:
+              'Paragraphs Revisions Content':
+                - revision_id
+              'Paragraphs Content':
+                - value
+            source: value
+          -
+            plugin: extract
+            index:
+              - revision_id
 destination:
   plugin: 'entity_complete:node'
   translations: true
@@ -114,5 +140,13 @@ migration_dependencies:
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
+    - upgrade_d7_paragraphs_file_title
+    - upgrade_d7_paragraphs_group_files_cm
+    - upgrade_d7_paragraphs_group_files_od
+    - upgrade_d7_paragraphs_group_files_sd
+    - upgrade_d7_paragraphs_revisions_file_title
+    - upgrade_d7_paragraphs_revisions_group_files_cm
+    - upgrade_d7_paragraphs_revisions_group_files_od
+    - upgrade_d7_paragraphs_revisions_group_files_sd
   optional:
     - upgrade_d7_field_instance

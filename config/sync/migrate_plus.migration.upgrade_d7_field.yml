@@ -21,6 +21,12 @@ process:
     -
       plugin: get
       source: entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
   status:
     -
       plugin: get
@@ -64,10 +70,13 @@ process:
       plugin: get
       source: cardinality
   settings:
-    -
+    0:
       plugin: d7_field_settings
+    paragraphs:
+      plugin: paragraphs_field_settings
 destination:
   plugin: 'entity:field_storage_config'
 migration_dependencies:
   required: {  }
-  optional: {  }
+  optional:
+    - upgrade_d7_paragraphs_type

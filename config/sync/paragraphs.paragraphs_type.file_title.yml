@@ -1,0 +1,10 @@
+uuid: 9c3f541c-f0bc-4135-a78d-ffe137067295
+langcode: en
+status: true
+dependencies: {  }
+id: file_title
+label: 'Group Files PO'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Group Files PO'
+behavior_plugins: {  }

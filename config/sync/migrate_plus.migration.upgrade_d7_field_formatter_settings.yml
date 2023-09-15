@@ -34,6 +34,12 @@ process:
     -
       plugin: get
       source: entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
   bundle:
     -
       plugin: migration_lookup
@@ -138,6 +144,8 @@ process:
           i18n_taxonomy_term_reference_link: entity_reference_label
           i18n_taxonomy_term_reference_plain: entity_reference_label
           entityreference_entity_view: entity_reference_entity_view
+        paragraphs:
+          paragraphs_view: entity_reference_revisions_entity_view
     -
       plugin: d7_field_type_defaults
     -
@@ -159,6 +167,14 @@ process:
     -
       plugin: get
       source: constants/third_party_settings
+  options/settings/view_mode:
+    paragraphs:
+      plugin: paragraphs_process_on_value
+      source_value: type
+      expected_value: paragraphs
+      process:
+        plugin: get
+        source: formatter/settings/view_mode
 destination:
   plugin: component_entity_display
 migration_dependencies:
@@ -166,6 +182,7 @@ migration_dependencies:
     - upgrade_d7_field_instance
     - upgrade_d7_view_modes
   optional:
+    - upgrade_d7_paragraphs_type
     - upgrade_d7_field
     - upgrade_d7_field_instance
     - upgrade_d7_view_modes

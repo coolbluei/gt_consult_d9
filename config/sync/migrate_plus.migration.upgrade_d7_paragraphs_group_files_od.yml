@@ -1,0 +1,50 @@
+uuid: cb8f8f58-befa-4809-a1bf-64b8cd4d212b
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_paragraphs_group_files_od
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+  - 'Paragraphs Content'
+migration_group: migrate_drupal_7
+label: 'Paragraphs (Group Files OD)'
+source:
+  plugin: d7_paragraphs_item
+  bundle: group_files_od
+process:
+  type:
+    -
+      plugin: get
+      source: bundle
+  field_group_title_od:
+    -
+      plugin: get
+      source: field_group_title_od
+  field_group_text_resources_od:
+    -
+      plugin: get
+      source: field_group_text_resources_od
+  field_group_link_url_od:
+    -
+      plugin: field_link
+      source: field_group_link_url_od
+  field_group_file_res_od:
+    -
+      plugin: sub_process
+      source: field_group_file_res_od
+      process:
+        target_id: fid
+        display: display
+        description: description
+destination:
+  plugin: 'entity_reference_revisions:paragraph'
+  default_bundle: group_files_od
+migration_dependencies:
+  required:
+    - upgrade_d7_paragraphs_type
+  optional:
+    - upgrade_d7_field_instance

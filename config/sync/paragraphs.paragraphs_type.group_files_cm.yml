@@ -1,0 +1,10 @@
+uuid: 222d6887-ad47-4adf-8a74-a549effa68fb
+langcode: en
+status: true
+dependencies: {  }
+id: group_files_cm
+label: 'Group Files CM'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Group Files CM'
+behavior_plugins: {  }

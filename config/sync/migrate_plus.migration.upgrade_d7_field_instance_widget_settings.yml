@@ -55,6 +55,12 @@ process:
     -
       plugin: get
       source: entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
   options/weight:
     -
       plugin: get
@@ -90,6 +96,8 @@ process:
         filefield_widget: file_generic
         video_embed_field_video: video_embed_field_textfield
         taxonomy_term_reference: taxonomy_term_reference_default
+        paragraphs_embed: entity_reference_paragraphs
+        paragraphs: paragraphs_default
   options/settings:
     -
       plugin: field_instance_widget_settings
@@ -100,11 +108,44 @@ process:
     -
       plugin: get
       source: constants/third_party_settings
+  options/settings/title:
+    paragraphs:
+      plugin: paragraphs_process_on_value
+      source_value: type
+      expected_value: paragraphs
+      process:
+        plugin: get
+        source: settings/title
+  options/settings/title_plural:
+    paragraphs:
+      plugin: paragraphs_process_on_value
+      source_value: type
+      expected_value: paragraphs
+      process:
+        plugin: get
+        source: settings/title_multiple
+  options/settings/edit_mode:
+    paragraphs:
+      plugin: paragraphs_process_on_value
+      source_value: type
+      expected_value: paragraphs
+      process:
+        plugin: get
+        source: settings/default_edit_mode
+  options/settings/add_mode:
+    paragraphs:
+      plugin: paragraphs_process_on_value
+      source_value: type
+      expected_value: paragraphs
+      process:
+        plugin: get
+        source: settings/add_mode
 destination:
   plugin: component_entity_form_display
 migration_dependencies:
   required:
     - upgrade_d7_field_instance
   optional:
+    - upgrade_d7_paragraphs_type
     - upgrade_d7_field
     - upgrade_d7_field_instance

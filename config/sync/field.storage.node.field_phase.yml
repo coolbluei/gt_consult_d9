@@ -1,0 +1,20 @@
+uuid: b5507300-d3fa-4cf9-9f33-8bee4289fc66
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_phase
+field_name: field_phase
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

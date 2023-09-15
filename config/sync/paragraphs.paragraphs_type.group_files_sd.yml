@@ -1,0 +1,10 @@
+uuid: 825518c6-9cbc-4566-abc1-1897d3d42ed6
+langcode: en
+status: true
+dependencies: {  }
+id: group_files_sd
+label: 'Group Files SD'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Group Files SD'
+behavior_plugins: {  }

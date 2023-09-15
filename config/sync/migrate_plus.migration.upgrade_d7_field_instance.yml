@@ -25,6 +25,12 @@ process:
     -
       plugin: get
       source: entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
   field_name:
     -
       plugin: get
@@ -36,6 +42,13 @@ process:
       bypass: true
       map:
         comment_node_forum: comment_forum
+    -
+      plugin: paragraphs_process_on_value
+      source_value: entity_type
+      expected_value: field_collection_item
+      process:
+        plugin: substr
+        start: 6
   bundle:
     -
       plugin: field_bundle
@@ -68,12 +81,14 @@ process:
           migration: upgrade_d7_taxonomy_vocabulary
           source: vid
   settings:
-    -
+    0:
       plugin: d7_field_instance_settings
       source:
         - settings
         - widget
         - field_definition
+    paragraphs:
+      plugin: paragraphs_field_instance_settings
   default_value_function:
     -
       plugin: get
@@ -105,3 +120,4 @@ migration_dependencies:
   optional:
     - upgrade_d7_node_type
     - upgrade_d7_taxonomy_vocabulary
+    - upgrade_d7_paragraphs_type

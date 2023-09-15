@@ -30,6 +30,12 @@ process:
     -
       plugin: get
       source: constants/entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
   bundle:
     -
       plugin: get
@@ -59,4 +65,5 @@ destination:
 migration_dependencies:
   required:
     - upgrade_user_picture_field_instance
-  optional: {  }
+  optional:
+    - upgrade_d7_paragraphs_type
