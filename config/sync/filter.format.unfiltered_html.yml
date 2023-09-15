@@ -1,0 +1,14 @@
+uuid: 789d696b-91ea-4354-bd1e-f591c78eaf98
+langcode: en
+status: true
+dependencies: {  }
+name: 'unfiltered HTML'
+format: unfiltered_html
+weight: 0
+filters:
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

@@ -1,0 +1,28 @@
+uuid: f73d5cba-8ead-4a0b-955a-fb36b1c01c8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.staff_bio.body
+    - node.type.staff_bio
+  module:
+    - text
+    - user
+id: node.staff_bio.default
+targetEntityType: node
+bundle: staff_bio
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

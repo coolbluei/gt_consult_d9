@@ -1,0 +1,8 @@
+uuid: 59204a20-2274-4344-9b7c-f79df509c23b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Phases: Strategic Development'
+vid: phase_strategic_development_
+description: ''
+weight: 0

@@ -1,0 +1,28 @@
+uuid: 1f109e25-7cc0-4749-b544-4996fa1f443e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.organizational_design.body
+    - node.type.organizational_design
+  module:
+    - text
+    - user
+id: node.organizational_design.default
+targetEntityType: node
+bundle: organizational_design
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

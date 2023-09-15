@@ -1,0 +1,18 @@
+uuid: c09da526-bbe6-4481-9793-f7d9d3eb88e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.toolkit_strategic_development_it
+id: node.toolkit_strategic_development_it.title
+field_name: title
+entity_type: node
+bundle: toolkit_strategic_development_it
+label: Step
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

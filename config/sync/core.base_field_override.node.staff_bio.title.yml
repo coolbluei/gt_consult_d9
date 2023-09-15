@@ -1,0 +1,18 @@
+uuid: 491efa79-7dfa-4029-a802-200d93d17531
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.staff_bio
+id: node.staff_bio.title
+field_name: title
+entity_type: node
+bundle: staff_bio
+label: 'First Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

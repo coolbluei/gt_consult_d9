@@ -1,0 +1,14 @@
+uuid: 67800989-66d3-4736-b85b-25256a0a6998
+langcode: en
+status: true
+dependencies: {  }
+name: bio_style
+label: bio_style
+effects:
+  46d0dcb8-fd43-4c7a-b111-57e941a9d363:
+    uuid: 46d0dcb8-fd43-4c7a-b111-57e941a9d363
+    id: image_resize
+    weight: 2
+    data:
+      width: 200
+      height: 210

@@ -2,13 +2,13 @@ _core:
   default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
 langcode: en
 uuid: 463728bb-42d7-414a-b5a5-2f6e9d1d718a
-name: 'Base D10 GT Install'
-mail: techteam@coolbluei.com
+name: 'Strategic Consulting | Georgia Institute of Technology | Atlanta, GA'
+mail: sonia@consulting.gatech.edu
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /user/login
+  403: /node/3
+  404: /node/4
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

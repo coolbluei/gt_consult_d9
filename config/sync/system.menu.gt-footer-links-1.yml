@@ -1,0 +1,8 @@
+uuid: 84a6a8ff-bc53-481c-a8f3-71b55bdf4a1e
+langcode: en
+status: true
+dependencies: {  }
+id: gt-footer-links-1
+label: 'Division of Administration and Finance '
+description: '1 of 3 footer menus. Allows for a maximum of 25 items.'
+locked: false

@@ -1,0 +1,18 @@
+uuid: 851776f8-4255-46b8-b12c-6f5a05426f49
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Toolkit: Change Management Item'
+type: change_management_item
+description: "GTSC's methodology for Change Management"
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

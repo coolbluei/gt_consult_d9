@@ -1,0 +1,14 @@
+uuid: 23fb7e95-3f9e-4578-888d-f8585c802beb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.preview
+  module:
+    - file
+id: file.image.preview
+targetEntityType: file
+bundle: image
+mode: preview
+content: {  }
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: e10f13b4-ba17-45fa-b71e-d106316a786a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gt_ct_carousel_slide
+  module:
+    - user
+id: node.gt_ct_carousel_slide.default
+targetEntityType: node
+bundle: gt_ct_carousel_slide
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

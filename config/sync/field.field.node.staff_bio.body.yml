@@ -1,0 +1,24 @@
+uuid: 1f4d89f5-ebfc-4d67-9cd1-25ab506081bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.staff_bio
+  module:
+    - text
+id: node.staff_bio.body
+field_name: body
+entity_type: node
+bundle: staff_bio
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

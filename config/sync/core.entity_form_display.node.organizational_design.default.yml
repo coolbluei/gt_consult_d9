@@ -1,0 +1,109 @@
+uuid: b5903f7c-3db1-4b9d-81c3-589ed47e0137
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.organizational_design.body
+    - node.type.organizational_design
+  module:
+    - field_group
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_text_resource:
+      children:
+        - field_text_resources
+        - field_link_resource
+      label: 'Text and Link Resources'
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: 'group-text-resource field-group-fieldset'
+        id: ''
+        description: ''
+        required_fields: false
+        formatter: open
+    group_files_grouped_od:
+      children:
+        - field_group_file_resources_od
+      label: 'Grouped File Resources'
+      region: content
+      parent_name: ''
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        classes: 'group-files-grouped-od field-group-fieldset'
+        id: ''
+        description: 'This section is only for files you want grouped under one heading title. '
+        required_fields: true
+        formatter: open
+id: node.organizational_design.default
+targetEntityType: node
+bundle: organizational_design
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

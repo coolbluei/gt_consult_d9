@@ -1,0 +1,20 @@
+uuid: db555855-3709-4797-80c2-521a88a27f8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.gt_ct_carousel
+  module:
+    - user
+id: node.gt_ct_carousel.teaser
+targetEntityType: node
+bundle: gt_ct_carousel
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

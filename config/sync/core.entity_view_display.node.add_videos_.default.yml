@@ -1,0 +1,19 @@
+uuid: 3f918edb-b7f1-4365-9e12-a9bf18b008bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.add_videos_
+  module:
+    - user
+id: node.add_videos_.default
+targetEntityType: node
+bundle: add_videos_
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

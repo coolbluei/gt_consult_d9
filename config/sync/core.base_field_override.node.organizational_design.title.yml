@@ -1,0 +1,18 @@
+uuid: 1df8890e-0e93-4325-a616-f8f85b85c4c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.organizational_design
+id: node.organizational_design.title
+field_name: title
+entity_type: node
+bundle: organizational_design
+label: Step
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

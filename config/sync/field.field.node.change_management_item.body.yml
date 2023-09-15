@@ -1,0 +1,24 @@
+uuid: 8b2f4ed1-6977-4c3f-b4e9-71ca6b6c2a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.change_management_item
+  module:
+    - text
+id: node.change_management_item.body
+field_name: body
+entity_type: node
+bundle: change_management_item
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,8 @@
+uuid: be38624c-ad3e-4271-8897-40a31cffb3fa
+langcode: en
+status: true
+dependencies: {  }
+name: 'Staff Sections'
+vid: staff_sections
+description: 'Staff area of focus'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: 2e653ac1-83dc-4dd7-b60d-c0643bd8247f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Phases: Change Management'
+vid: organizational_change
+description: ''
+weight: -8

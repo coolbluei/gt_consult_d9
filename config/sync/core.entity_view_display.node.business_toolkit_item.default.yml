@@ -1,0 +1,28 @@
+uuid: 274037a8-7e11-4759-8756-361081e1c771
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business_toolkit_item.body
+    - node.type.business_toolkit_item
+  module:
+    - text
+    - user
+id: node.business_toolkit_item.default
+targetEntityType: node
+bundle: business_toolkit_item
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

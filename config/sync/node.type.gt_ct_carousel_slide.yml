@@ -1,0 +1,16 @@
+uuid: 94f4939b-1578-4867-972b-77bf108dade5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: 'Carousel Slide'
+type: gt_ct_carousel_slide
+description: 'Slides for rotating image carousels.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

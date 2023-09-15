@@ -1,0 +1,22 @@
+uuid: fe17c133-ca55-4c02-acdc-fb68bc368dc2
+langcode: en
+status: true
+dependencies: {  }
+name: video_thumbs
+label: 'Video Thumbs (300 x 160)'
+effects:
+  96d47a5d-9d94-4689-af27-38314ebbcf6a:
+    uuid: 96d47a5d-9d94-4689-af27-38314ebbcf6a
+    id: image_resize
+    weight: 1
+    data:
+      width: 340
+      height: 240
+  e61d05ef-efd5-40d2-91d0-e25b042867d6:
+    uuid: e61d05ef-efd5-40d2-91d0-e25b042867d6
+    id: image_crop
+    weight: 2
+    data:
+      width: 340
+      height: 180
+      anchor: center-center

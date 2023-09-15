@@ -1,0 +1,24 @@
+uuid: 532fb0d7-90b0-4d97-a079-2954fd85f32f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.business_toolkit_item
+  module:
+    - text
+id: node.business_toolkit_item.body
+field_name: body
+entity_type: node
+bundle: business_toolkit_item
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

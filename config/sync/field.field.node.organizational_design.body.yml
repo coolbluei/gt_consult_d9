@@ -1,0 +1,24 @@
+uuid: d37a6e65-7835-44d1-a7c9-4e3001986c40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.organizational_design
+  module:
+    - text
+id: node.organizational_design.body
+field_name: body
+entity_type: node
+bundle: organizational_design
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,30 @@
+uuid: 0f145e74-2479-4990-b0a8-cdeb18f890fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organizational_design.body
+    - node.type.organizational_design
+  module:
+    - text
+    - user
+id: node.organizational_design.teaser
+targetEntityType: node
+bundle: organizational_design
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

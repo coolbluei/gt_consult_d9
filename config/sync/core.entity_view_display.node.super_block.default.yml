@@ -1,0 +1,19 @@
+uuid: 0089891d-7439-49c5-9a2a-426da75505ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.super_block
+  module:
+    - user
+id: node.super_block.default
+targetEntityType: node
+bundle: super_block
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

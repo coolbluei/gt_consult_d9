@@ -1,0 +1,30 @@
+uuid: 32e660eb-6d27-4292-86da-4359c6ece04d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.consulting_material_docs.body
+    - node.type.consulting_material_docs
+  module:
+    - text
+    - user
+id: node.consulting_material_docs.teaser
+targetEntityType: node
+bundle: consulting_material_docs
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 1f6c425c-2437-4bf0-816c-a50091a31bd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.gt_ct_carousel_slide
+  module:
+    - user
+id: node.gt_ct_carousel_slide.teaser
+targetEntityType: node
+bundle: gt_ct_carousel_slide
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

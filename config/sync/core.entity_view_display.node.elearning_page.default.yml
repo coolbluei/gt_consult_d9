@@ -1,0 +1,28 @@
+uuid: 261fec76-cbe4-478a-94fd-61b6543c7465
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.elearning_page.body
+    - node.type.elearning_page
+  module:
+    - text
+    - user
+id: node.elearning_page.default
+targetEntityType: node
+bundle: elearning_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

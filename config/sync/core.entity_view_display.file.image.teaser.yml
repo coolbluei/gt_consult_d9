@@ -1,0 +1,14 @@
+uuid: 740f2b5b-73b7-45bf-84e0-7aae5eefb89d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.teaser
+  module:
+    - file
+id: file.image.teaser
+targetEntityType: file
+bundle: image
+mode: teaser
+content: {  }
+hidden: {  }

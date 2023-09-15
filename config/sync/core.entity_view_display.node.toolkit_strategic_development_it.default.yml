@@ -1,0 +1,28 @@
+uuid: 9de6d460-6120-433c-a3f6-d5273e83e18a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.toolkit_strategic_development_it.body
+    - node.type.toolkit_strategic_development_it
+  module:
+    - text
+    - user
+id: node.toolkit_strategic_development_it.default
+targetEntityType: node
+bundle: toolkit_strategic_development_it
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,17 @@
+uuid: d7e59ca9-9bba-43f0-aaac-2a7e862d3a1f
+langcode: en
+status: true
+dependencies: {  }
+name: Iframe
+format: iframe
+weight: -6
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd><iframe>'
+      filter_html_help: true
+      filter_html_nofollow: false

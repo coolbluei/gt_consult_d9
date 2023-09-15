@@ -1,0 +1,28 @@
+uuid: 6c1ba00c-dc40-41cf-9e93-582d7f2e619a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.change_management_item.body
+    - node.type.change_management_item
+  module:
+    - text
+    - user
+id: node.change_management_item.default
+targetEntityType: node
+bundle: change_management_item
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

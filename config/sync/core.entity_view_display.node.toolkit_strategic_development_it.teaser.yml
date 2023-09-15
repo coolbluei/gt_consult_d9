@@ -1,0 +1,30 @@
+uuid: c994ef77-fded-4763-bc6f-916d861362f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.toolkit_strategic_development_it.body
+    - node.type.toolkit_strategic_development_it
+  module:
+    - text
+    - user
+id: node.toolkit_strategic_development_it.teaser
+targetEntityType: node
+bundle: toolkit_strategic_development_it
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

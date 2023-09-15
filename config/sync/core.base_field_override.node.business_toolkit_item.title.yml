@@ -1,0 +1,18 @@
+uuid: 091cafee-7421-410e-ad79-2357efd2454f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.business_toolkit_item
+id: node.business_toolkit_item.title
+field_name: title
+entity_type: node
+bundle: business_toolkit_item
+label: Step
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 05690c0f-b649-4e39-94e3-afcfaafd2f34
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.horizontal_landing_page
+  module:
+    - user
+id: node.horizontal_landing_page.default
+targetEntityType: node
+bundle: horizontal_landing_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

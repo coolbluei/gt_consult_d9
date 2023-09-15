@@ -1,0 +1,28 @@
+uuid: b95fc680-0ab2-4734-9088-7f5133ebbf96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.consulting_material_docs.body
+    - node.type.consulting_material_docs
+  module:
+    - text
+    - user
+id: node.consulting_material_docs.default
+targetEntityType: node
+bundle: consulting_material_docs
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
