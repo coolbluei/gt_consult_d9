@@ -1,0 +1,25 @@
+uuid: 8d4a7a66-c8d3-4ef5-922d-194e33aea3ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - node.type.add_videos_
+  module:
+    - video_embed_field
+id: node.add_videos_.field_media
+field_name: field_media
+entity_type: node
+bundle: add_videos_
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: '0'
+    youtube_playlist: '0'
+field_type: video_embed_field

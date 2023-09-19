@@ -1,0 +1,20 @@
+uuid: f6fd984a-1067-4f04-a8a8-951547bd2a73
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_video_order
+field_name: field_video_order
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

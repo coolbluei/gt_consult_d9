@@ -3,17 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.add_videos_.field_media
+    - field.field.node.add_videos_.field_video_order
     - node.type.add_videos_
   module:
     - field_group
     - path
+    - video_embed_field
 third_party_settings:
   field_group:
     group_add_video:
       children:
-        - field_media_file
-        - field_order_videos
         - title
+        - field_media
+        - field_video_order
       label: 'Add Video'
       region: content
       parent_name: ''
@@ -35,6 +38,19 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_media:
+    type: video_embed_field_textfield
+    weight: -4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_video_order:
+    type: number
+    weight: -3
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path
