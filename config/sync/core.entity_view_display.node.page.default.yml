@@ -22,25 +22,6 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          b4043fa8-998e-47fb-adc6-70e06bb949de:
-            uuid: b4043fa8-998e-47fb-adc6-70e06bb949de
-            region: content
-            configuration:
-              id: 'field_block:node:page:body'
-              label: Body
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings:
-                  field_formatter_class:
-                    class: ''
-            weight: 1
-            additional: {  }
           5ee6bb65-e60b-4910-be02-5ffe69a28d61:
             uuid: 5ee6bb65-e60b-4910-be02-5ffe69a28d61
             region: content

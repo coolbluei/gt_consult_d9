@@ -5,6 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.staff_bio.body
+    - field.field.node.staff_bio.field_email
+    - field.field.node.staff_bio.field_last_name
+    - field.field.node.staff_bio.field_phone_number
+    - field.field.node.staff_bio.field_position_title
+    - field.field.node.staff_bio.field_staff_area_2
+    - field.field.node.staff_bio.field_staff_picture
     - node.type.staff_bio
   module:
     - text
@@ -27,4 +33,10 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_email: true
+  field_last_name: true
+  field_phone_number: true
+  field_position_title: true
+  field_staff_area_2: true
+  field_staff_picture: true

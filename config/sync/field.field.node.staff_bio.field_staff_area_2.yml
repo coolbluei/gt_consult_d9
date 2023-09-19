@@ -1,0 +1,29 @@
+uuid: 5e43e10b-b745-4a9f-812d-8f5b2ed39b22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_area_2
+    - node.type.staff_bio
+    - taxonomy.vocabulary.staff_sections
+id: node.staff_bio.field_staff_area_2
+field_name: field_staff_area_2
+entity_type: node
+bundle: staff_bio
+label: 'Secondary Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      staff_sections: staff_sections
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

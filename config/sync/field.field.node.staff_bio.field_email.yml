@@ -1,0 +1,19 @@
+uuid: 2aafc9d4-ee78-452d-93de-0367ebb073c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.staff_bio
+id: node.staff_bio.field_email
+field_name: field_email
+entity_type: node
+bundle: staff_bio
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

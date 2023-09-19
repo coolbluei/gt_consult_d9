@@ -11,8 +11,8 @@ third_party_settings:
       - gt-footer-links-2
       - gt-footer-links-3
       - gt-footer-utility-links
-      - main-menu
-    parent: 'main-menu:0:'
+      - main
+    parent: 'gt-action-items:'
 _core:
   default_config_hash: _z3Ch0AxSvwgUcbg02iOKl_Q8PAxirr6lbEpQFsuPNs
 name: 'Basic page'
