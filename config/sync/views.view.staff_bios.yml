@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_hg_last_name
+    - field.storage.node.field_last_name
+    - field.storage.node.field_position_title
+    - field.storage.node.field_staff_area_2
+    - field.storage.node.field_staff_picture
+    - image.style.bio_style
     - node.type.staff_bio
     - system.menu.main
   module:
+    - image
     - node
     - text
     - user
@@ -27,6 +32,72 @@ display:
     display_options:
       title: 'Staff Bios'
       fields:
+        field_staff_picture:
+          id: field_staff_picture
+          table: node__field_staff_picture
+          field: field_staff_picture
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: ''
+            image_style: bio_style
+            image_loading:
+              attribute: lazy
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         title:
           id: title
           table: node_field_data
@@ -38,52 +109,7 @@ display:
           entity_field: title
           plugin_id: field
           label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            trim: false
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -124,8 +150,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: string
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -136,16 +163,16 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_hg_last_name:
-          id: field_hg_last_name
-          table: node__field_hg_last_name
-          field: field_hg_last_name
+        field_last_name:
+          id: field_last_name
+          table: node__field_last_name
+          field: field_last_name
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -199,17 +226,16 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        delete_node:
-          id: delete_node
-          table: node
-          field: delete_node
+        field_position_title:
+          id: field_position_title
+          table: node__field_position_title
+          field: field_position_title
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          plugin_id: entity_link_delete
+          plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -249,9 +275,82 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Delete Bio'
-          output_url_as_text: false
-          absolute: false
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         edit_node:
           id: edit_node
           table: node
@@ -262,7 +361,7 @@ display:
           entity_type: node
           plugin_id: entity_link_edit
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -305,6 +404,118 @@ display:
           text: 'Edit Bio'
           output_url_as_text: false
           absolute: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"bio-wrap\"> \r\n<div class=\"bio-image\">{{ field_staff_picture }}\r\n<span class=\"bio-name\">{{ title }} {{ field_last_name }}</span><span class=\"bio-user-title\">{{ field_position_title}}</span>\r\n{{ edit_node }}\r\n</div>\r\n<div class=\"bio-text-wrap\">\r\n<div class=\"bio-text\">{{ body }}</div> \r\n</div>\r\n</div>\r\n<br />\r\n<hr  class=\"style-two\" />\r\n<br />"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+        field_staff_area_2:
+          id: field_staff_area_2
+          table: node__field_staff_area_2
+          field: field_staff_area_2
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       pager:
         type: mini
         options:
@@ -382,6 +593,10 @@ display:
             staff_bio: staff_bio
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: bio-row-wrapper
+          default_row_class: true
       row:
         type: fields
       query:
@@ -406,7 +621,10 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_hg_last_name'
+        - 'config:field.storage.node.field_last_name'
+        - 'config:field.storage.node.field_position_title'
+        - 'config:field.storage.node.field_staff_area_2'
+        - 'config:field.storage.node.field_staff_picture'
   page_1:
     id: page_1
     display_title: Page
@@ -431,4 +649,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_hg_last_name'
+        - 'config:field.storage.node.field_last_name'
+        - 'config:field.storage.node.field_position_title'
+        - 'config:field.storage.node.field_staff_area_2'
+        - 'config:field.storage.node.field_staff_picture'

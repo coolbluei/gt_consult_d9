@@ -1,0 +1,42 @@
+uuid: 8df80448-0706-4b00-820e-3fc0bbd343cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.consulting_homepage_icons
+    - field.field.block_content.consulting_homepage_icons.field_icon_image
+    - field.field.block_content.consulting_homepage_icons.field_icon_link
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+id: block_content.consulting_homepage_icons.default
+targetEntityType: block_content
+bundle: consulting_homepage_icons
+mode: default
+content:
+  field_icon_image:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_icon_link:
+    type: link_default
+    weight: 27
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

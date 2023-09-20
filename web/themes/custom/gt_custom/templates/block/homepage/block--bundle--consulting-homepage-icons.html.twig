@@ -28,16 +28,19 @@
 {%
     set classes = [
     'block',
-    'block-ehs_homepage_callout',
+    'block-consulting-icon',
     'block-' ~ configuration.provider|clean_class
 ]
 %}
 {% set classes = classes | merge(plugin_id|split(":")) %}
+{% set link_url = file_url(content.field_icon_link.0['#url']|render) %}
 
 <div{{ attributes.addClass(classes) }}>
     {{ title_prefix }}
     {{ title_suffix }}
     {% block content %}
-        {{ content }}
+      <a href="{{ link_url }}">
+        {{ content|without('field_icon_link') }}
+        <h5{{ title_attributes }}>{{ label }}</h5></a>
     {% endblock %}
 </div>

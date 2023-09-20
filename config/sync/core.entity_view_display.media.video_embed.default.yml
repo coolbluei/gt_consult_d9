@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.media.video_embed.field_description
     - field.field.media.video_embed.field_media_video_embed_field
+    - field.field.media.video_embed.field_video_order
     - media.type.video_embed
   module:
     - video_embed_field
@@ -15,11 +16,11 @@ mode: default
 content:
   field_description:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_media_video_embed_field:
     type: video_embed_field_video
@@ -30,10 +31,18 @@ content:
       width: 854
       height: 480
     third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   created: true
-  name: true
+  field_video_order: true
   thumbnail: true
   uid: true

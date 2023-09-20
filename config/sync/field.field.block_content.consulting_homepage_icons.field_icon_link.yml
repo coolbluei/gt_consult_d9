@@ -1,0 +1,23 @@
+uuid: cf375316-35bc-4e1c-ad0b-3bf63ea59154
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.consulting_homepage_icons
+    - field.storage.block_content.field_icon_link
+  module:
+    - link
+id: block_content.consulting_homepage_icons.field_icon_link
+field_name: field_icon_link
+entity_type: block_content
+bundle: consulting_homepage_icons
+label: 'Icon Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

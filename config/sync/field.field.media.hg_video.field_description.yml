@@ -1,0 +1,19 @@
+uuid: ee3a1694-cad2-400e-85db-42a7b860db63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_description
+    - media.type.hg_video
+id: media.hg_video.field_description
+field_name: field_description
+entity_type: media
+bundle: hg_video
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

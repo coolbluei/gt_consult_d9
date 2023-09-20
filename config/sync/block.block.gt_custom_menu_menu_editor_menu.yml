@@ -1,0 +1,25 @@
+uuid: dbe71f85-9519-4de9-94e3-98159aa76cd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-editor-menu
+  module:
+    - system
+  theme:
+    - gt_custom
+id: gt_custom_menu_menu_editor_menu
+theme: gt_custom
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-editor-menu'
+settings:
+  id: 'system_menu_block:menu-editor-menu'
+  label: ''
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,40 @@
+uuid: 8af2351c-ab3b-4e7e-8e90-593ce34d94b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.consulting_homepage_icons
+    - field.field.block_content.consulting_homepage_icons.field_icon_image
+    - field.field.block_content.consulting_homepage_icons.field_icon_link
+  module:
+    - image
+    - link
+id: block_content.consulting_homepage_icons.default
+targetEntityType: block_content
+bundle: consulting_homepage_icons
+mode: default
+content:
+  field_icon_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

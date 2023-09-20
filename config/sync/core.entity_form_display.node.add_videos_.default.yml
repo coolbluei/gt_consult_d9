@@ -8,8 +8,8 @@ dependencies:
     - node.type.add_videos_
   module:
     - field_group
+    - media_library
     - path
-    - video_embed_field
 third_party_settings:
   field_group:
     group_add_video:
@@ -40,10 +40,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media:
-    type: video_embed_field_textfield
-    weight: -4
+    type: media_library_widget
+    weight: 121
     region: content
-    settings: {  }
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_video_order:
     type: number

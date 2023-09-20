@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.hg_video.field_description
     - field.field.media.hg_video.field_media_hg_video
     - media.type.hg_video
   module:
@@ -14,6 +15,14 @@ targetEntityType: media
 bundle: hg_video
 mode: default
 content:
+  field_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_media_hg_video:
     type: oembed
     label: visually_hidden

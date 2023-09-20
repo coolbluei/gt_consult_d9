@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.hg_video.field_description
     - field.field.media.hg_video.field_media_hg_video
     - media.type.hg_video
   module:
@@ -20,6 +21,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_media_hg_video:
     type: oembed_textfield

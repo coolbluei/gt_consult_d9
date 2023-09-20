@@ -1,0 +1,8 @@
+uuid: 27d00920-a502-4f2e-9f53-f759f72ecb59
+langcode: en
+status: true
+dependencies: {  }
+id: classable_basic_block
+label: 'Classable Basic Block'
+revision: 0
+description: ''

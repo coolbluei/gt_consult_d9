@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.hg_video.field_description
     - field.field.media.hg_video.field_media_hg_video
     - image.style.medium
     - media.type.hg_video
@@ -27,6 +28,7 @@ content:
     region: content
 hidden:
   created: true
+  field_description: true
   field_media_hg_video: true
   name: true
   uid: true

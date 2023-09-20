@@ -6,6 +6,7 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.video_embed.field_description
     - field.field.media.video_embed.field_media_video_embed_field
+    - field.field.media.video_embed.field_video_order
     - media.type.video_embed
 id: media.video_embed.media_library
 targetEntityType: media
@@ -24,6 +25,7 @@ hidden:
   created: true
   field_description: true
   field_media_video_embed_field: true
+  field_video_order: true
   path: true
   status: true
   uid: true
