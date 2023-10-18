@@ -1,0 +1,1097 @@
+/**
+ * @file
+ * A CSS style sheet to be used for custom styling.
+ *
+ * Just be sure to make a backup of this file prior to updating to a new version of the GT Subtheme,
+ * or your styles will get overridden when updating.
+ * After updating you'll need to replace this file with your backup.
+ *
+ */
+
+
+ .editor-clear-float-left {   
+  text-align: center;   /* Hack to align image center since the Ck editor doesn't honor it's own settings */ 
+  }
+
+/************ Custom Carousel Styles *************************/
+.gtct-carousel__slides-wrapper {
+  margin-bottom: 40px; /* adds space below wrapper for slide circles   -- previous margin-bottom 10px *  /
+}
+.gtct-carousel-slide__title-wrapper.title-left .gtct-carousel-slide__title-static {
+  left: 0px; /*left: 40px; We reduce the left posistion to zero to align text on the stage so there is no overflow */
+}
+
+#header-spotlight .gtct-carousel-slide__title-wrapper{
+  height: 400px ;
+}
+
+.gtct-carousel-slide__title-wrapper {
+  /*float: left;
+  height: 420px;
+  position: relative;*/ 
+  left: 20px;
+  width: 50%;  /* was 100%*/
+}
+.gtct-carousel-slide__title-static {
+  background-color: #fff;
+  background: none repeat scroll 0 0 rgba(0,0,0,0.5);
+  bottom: 50px;
+  padding: 10px 25px;
+  position: absolute;
+  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  opacity: 1; 
+  border-radius: 4px;
+}
+
+.gtct-carousel__slides-wrapper .flex-control-nav { /* controls the posistioning of the slider circles on the bottom of slide */
+  bottom: 10px; /* previous -25px */
+  /*size: 1em;*/
+  line-height: 1;
+}
+.gtct-carousel__slides-wrapper .flex-direction-nav a{
+   height: 50px; 
+   width: 50px;
+   text-shadow: 0 1px 2px #5a5a5a;
+   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+   opacity: 0.80;  
+   position: absolute;
+   top: 50%; 
+}
+
+.gtct-carousel__slides-wrapper .flex-direction-nav a:before {
+  content: "\f104";  /*replace old FA icon with new arrow icon */
+} 
+
+/*
+.gtct-carousel__slides-wrapper .flex-direction-nav a.flex-next:before{
+   content: "\f105";
+      /*content: "\f138"; 
+*/
+}
+/*.gtct-carousel__slides-wrapper .flex-direction-nav a:before {
+    font-size: 82px;
+    line-height: .45;
+}
+*/
+/*
+.gtct-carousel__slides-wrapper .flex-direction-nav a.flex-prev, .gtct-carousel__slides-wrapper .flex-direction-nav a.flex-next {
+  text-decoration: none;  /* Added for IE : IE puts an underline under the icons because its wrapped in an anchor link 
+}*/
+.gtct-carousel-slide__title-static .gtct-carousel-slide__title-text {
+  font-size: 2.5em;
+  line-height: 1.3;
+  margin: 12px 2px !important;
+}
+.gtct-carousel-slide__title-static h4.gtct-carousel-slide__title-text a, .gtct-carousel-slide__summary-text, a.gtct-carousel-slide__jumplink{
+  color: #ffffff;
+  font-weight: 300;
+}
+.gtct-carousel-slide__title-static .gtct-carousel-slide__summary-text {
+  font-size: 1.20em;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+/* remvoing the icon from the slide because the links in the slide do not go anywhere*/ 
+
+/*.gtct-carousel-slide__jumplink:after {
+  display:none;
+  content: "\f064";
+  padding-left: 5px;
+}*/
+.gtct-carousel__slides-wrapper .flex-control-paging li a {
+  background: rgba(239, 239, 239, 1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/****** Start custom Styles **********/
+
+
+#identity-wrapper h2{ /* Homee page title in the upper right corner. Font size reduced so it aappears on one line. It appears on all pages "Enabling Organizational Effectiveness" */
+  font-size: 1.8em;
+ 
+}
+
+
+
+
+.direction-icon:before{
+  content: "\f18e"; 
+  font-family: "FontAwesome";  
+  font-size: 1em;  
+  font-weight: 300;
+  line-height: inherit;
+  color:#545454;
+}
+
+.direction-icon:hover:before{
+  color: #eeb211;
+  text-decoration: none
+}
+
+ 
+.page-node-44 a:hover{
+    text-decoration: none
+}
+
+
+/* Control Services page icon underline which is native anchor link style  */
+
+#node-44 a.link {
+  text-decoration: none !important;
+}
+#node-44 a.visited{
+  text-decoration: none !important;
+}
+
+/* Custom Controls the right side menu  */
+.block.block-title-bg-gt-blue .block-title-wrapper {
+  padding: 0 !important;
+  line-height: 1; 
+}
+
+.block-menu .menu, .block.block-menu .menu {
+    border-bottom: 0px solid #808080;
+    margin: 0 0 10px;
+    padding: 0;
+}
+.block.icon-download-title .block-title-wrapper h4 {
+    padding: 10px 10px !important;
+}
+
+.center-icon{
+  text-align: center;
+}
+
+.center-icon h5{
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  color: #00254c;
+}
+
+.center-icon h5 a:link{
+  color: #545454;
+}
+.center-icon h5 a:hover{
+  text-decoration: none;  
+  color: #00254c;
+}
+.center-icon h5 a{
+  color: #00254c;
+}
+
+.jump-link a:before {
+    background-color: #545454;
+    border-radius: 20px 20px 20px 20px;
+    color: #FFFFFF;
+    content: "\f061";
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 0.75em;
+    height: 20px;
+    left: 8px;
+    padding: 2px 0 0 6px;
+    position: absolute;
+    top: 5px;
+    width: 20px;
+}
+
+.super-block__teaser p{
+    font-weight: 300;
+    margin: .5em 0 .5em;
+}
+
+/*.page-node-1 #crumbar {
+    background-color: #FFFFFF;
+    display: none;
+}*/
+
+
+
+@media only screen and (max-width: 51em){
+
+  #identity-wrapper h2{ /* Homee page title in the upper right corner. Font size reduced so it aappears on one line. It appears on all pages "Enabling Organizational Effectiveness" */
+    padding-top: 10px ;
+  }
+  .gtct-carousel__slides-wrapper .flex-control-nav { bottom: -25px; }
+  .gtct-carousel__slides-wrapper { margin-bottom: 40px; }
+   #header-spotlight .gtct-carousel-slide__title-wrapper, .gtct-carousel-slide__title-wrapper { height: 100%; width: 100%; left: 0px; }
+  .gtct-carousel-slide__title-wrapper.title-left .gtct-carousel-slide__title-static{ left: 0px; }  
+  .gtct-carousel-slide__jumplink,  
+  .gtct-carousel-slide__title-static .gtct-carousel-slide__summary-text{ display: none; }
+  .gtct-carousel-slide__title-static {
+    background-color: rgba(0,0,0,0.3) !important;
+    bottom: 0px; 
+    padding: 15px;
+    position: absolute; 
+    width: 100%;filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+    opacity: 1 !important; border-radius: 0px;
+  }
+  .gtct-carousel-slide__title-static .gtct-carousel-slide__title-text {
+    font-size: 5vw;
+   }
+}
+
+.bio-wrap{
+    padding: 0 0 25px 0;
+
+}
+.bio-image{
+  float: left;
+  width: 17%;
+}
+
+.bio-image img{
+   border-radius: 50%;
+    border: solid 10px #d4d4d4;
+    width: 190px;
+    height: 195px;
+    padding: 2px;
+}
+
+.bio-name{
+    padding: 10px 0 0 0;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.bio-user-title{
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.bio-text-wrap{
+    float: left;
+    width: 82%;
+    padding: 0 0 40px 10px;
+  }
+
+.view-staff-bios .view-grouping-header{
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 1.5;
+	
+}
+.view-grouping-content .view-grouping-header{
+	font-size: 1em;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 51em){
+    .bio-text, .bio-image{
+      width: 100%;
+      float: none;
+    } 
+    .bio-image{
+     text-align: center;
+    } 
+    .bio-text-wrap{
+      width: 100%;
+     }
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1024px){
+    .bio-image{
+      width: 20%;
+    } 
+    .bio-text-wrap{
+      width: 80%;
+     }
+
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+
+.list-contact{
+   margin: 15px 0 !important;
+}
+
+.video-wrap{
+  float: left;
+  width: 340px;
+  margin-right: 40px;
+  margin-bottom:30px;
+
+}
+.video-wrap:nth-of-type(3n){
+    margin-right: 0px;
+}
+
+/* .video-wrap:nth-of-type(4n){
+    clear: both;
+}
+*/
+
+.video-title{
+  font-weight: 500;
+  margin: 0 0 .5em 0;
+}
+
+.video-embed-description{
+  padding-top: 10px;
+  font-size: .925em;
+}
+
+/***********************************/
+
+.gt-blue{
+color: #00263A;
+}
+
+.gt-grey{
+color: #545454;
+margin: 20px 0 25px 0px;
+font-size: 1em;
+}
+
+
+.field-type-image .field-item{
+  padding: 15px 10px 15px 0;
+    float: left;
+   
+}
+.field-type-image .field-item img{
+  width: 275px;
+    height: 200px;
+}
+
+.field-type-image{
+    margin: 5px 0 60px 0;
+    overflow: hidden;
+}
+
+ .video-embed-style .field-item{
+  float: left;
+  margin: 0 10px 35px  0;
+ }
+
+
+/*********** Styles for the Methodology ToolKit ********************/
+
+.view-grouping-content table tbody, .view-grouping-content table thead,{
+  font-size: .925em;
+}
+.view-grouping-content table tbody td, .view-grouping-content table thead th{
+    padding: .65em !important;
+}
+
+.page-node-236 .view-content{
+    overflow-x:auto;
+}
+.page-node-236 .block {
+     padding: 0 !important; 
+}
+
+ tr th.views-field-title{
+  width: 25% !important;
+ }
+ tr th.views-field-body{
+  width: 53% !important;
+ }
+ tr th.views-field-field-resources{
+  width: 22% !important;
+ }
+
+.views-field-body p, .views-field-title p{
+    margin: 0em 0 1em !important;
+}
+
+.file-icon{
+  display: none;
+ }
+
+ .view-grouping-header h3{
+    font-size: 1.75em;
+    margin: 10px 0 25px 0;
+    font-weight: 400;
+ }
+
+ .views-table caption{
+  margin: 0;
+  padding: 20px 0;
+  font-size: .95em;
+  line-height: 1.4;
+  text-align: left;
+  font-style: italic;
+ }
+
+caption {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #6c757d;
+    text-align: left;
+    caption-side: top;
+}
+
+.views-field-field-resources .item-list ul li {
+    margin: 0 0 .25em !important;
+}
+
+.views-field-field-resources .file{
+    padding: 0 0 8px 0;
+    display: inline-block;
+}
+.edit-steps{
+  font-size: .825em;
+}
+
+.field-name-field-group-file-resources .field-item, 
+.field-name-field-group-file-res-od  .field-item,
+.field-name-field-group-file-res-sd  .field-item,
+.field-name-field-group-file-res-cm  .field-item
+{
+  display: list-item;
+  margin-left: 25px;
+  line-height: 1.4;
+}
+.field-name-field-group-text-resources .field-items, .field-name-field-group-link-url .field-items,
+.field-name-field-group-text-resources-cm .field-items, .field-name-field-group-link-url-cm .field-items,
+.field-name-field-group-text-resources-sd .field-items, .field-name-field-group-link-url-sd .field-items,
+.field-name-field-group-text-resources-od .field-items, .field-name-field-group-link-url-od .field-items
+{
+  display: list-item;
+  margin-left: 25px;
+  line-height: 1.4;
+}
+
+.resource-text{
+  line-height: 1.3;
+  display: block;
+  padding-bottom: 6px;
+}
+
+.tools-resources-wrap, .entity-paragraphs-item{   
+  line-height: 1.3;
+  display: block;
+  padding-bottom: 8px;
+}
+
+
+.views-table tbody{
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+ /* Instead use this non-standard one: */
+  /*word-break: break-word;*/
+  hyphens: manual;
+ font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1600 - 320)));
+}
+
+
+/**********Business Toolkit Navigation  Process Optimization *************/
+
+.crumbar {
+    /*centering*/
+    display: inline-block;
+    /*margin: 0 20px;*/
+    /*box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);*/
+    /*overflow: hidden;*/
+    border-radius: 5px;
+    /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+    counter-reset: flag; 
+}
+
+.crumbar {
+    padding-bottom: 0em;
+}
+
+.crumbar a{
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 1.35;
+    color: white;
+    /*need more margin on the left of links to accomodate the numbers*/
+    padding: 8px 60px 7px 60px;
+    background: #666;
+    background: linear-gradient(#666, #333);
+    position: relative;
+    width: 275px;
+    text-align: center;
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+/*.crumbar a:first-child {
+    padding: 8px 35px 7px 25px;
+}   */
+ /*border-radius: 5px 0 0 5px; to match with the parent's radius*/
+
+.crumbar a:first-child:before {
+    left: -2px;
+}
+.crumbar a:last-child {
+    border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+    /*padding-right: 20px;*/
+}
+
+.crumbar a:nth-child(1), .crumbar a:nth-child(1):after{
+    background: #002349;
+} 
+.crumbar a:nth-child(2), .crumbar a:nth-child(2):after{
+    background: #234c8c;
+} 
+.crumbar a:nth-child(3), .crumbar a:nth-child(3):after{
+    background: #516ba2;
+}
+.crumbar a:nth-child(4), .crumbar a:nth-child(4):after{
+    background: #9598a2;
+}
+.crumbar a:nth-child(5), .crumbar a:nth-child(5):after {
+    background: #385a99;
+}
+.crumbar a:nth-child(6), .crumbar a:nth-child(6):after {
+    background: #516ba2;
+}
+.crumbar a:nth-child(7), .crumbar a:nth-child(7):after {
+    background: #7381a1;
+}
+.crumbar a:nth-child(8), .crumbar a:nth-child(8):after {
+    background: #9598a2;
+}
+
+
+/*hover/active styles*/
+.crumbar a.active, .crumbar a:hover{
+    background: #333;
+    background: linear-gradient(#333, #000);
+}
+.crumbar a.active:after, .crumbar a:hover:after {
+    background: #333;
+    background: linear-gradient(135deg, #333, #000);
+}
+
+
+
+
+/*adding the arrows for the crumbars using rotated pseudo elements*/
+.crumbar a:after {
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: -18px; /*half of square's length*/
+    /*same dimension as the line-height of .crumbar a */
+    width: 36px; 
+    height:109%;
+    /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+    length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+    if diagonal required = 1; length = 1/1.414 = 0.707*/
+    transform: scale(0.707) rotate(45deg);
+    /*we need to prevent the arrows from getting buried under the next link*/
+    z-index: 1;
+    /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+    background: #666;
+    background: linear-gradient(135deg, #666, #333);
+    /*stylish arrow design using box shadow*/
+    box-shadow: 
+        2px -2px 0 1px rgba(255, 255, 255, 1), 
+        3px -3px 0 2px rgba(255, 255, 255, 0);
+    /*
+        5px - for rounded arrows and 
+        50px - to prevent hover glitches on the border created using shadows*/
+    border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.crumbar a:last-child:after {
+    position: absolute;
+    top: -1px;
+    height: 49px;
+    width: 39px;
+    right: -18px;
+    transform: scale(0.707) rotate(40deg);
+}
+
+/*we will use the :before element to show numbers*/
+.crumbar a:before {
+    content: counter(flag);
+    counter-increment: flag;
+    /*some styles now*/
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 1.2;
+    margin: 8px 0;
+    position: absolute;
+    top: -12px;
+    left: -2px;
+    color: #222;
+    background: #fff;
+    background: linear-gradient(#fff, #fff);
+    font-weight: bold;
+    border: 2px solid #222;
+    z-index: 10;
+    padding: 1px;
+}
+
+div[class*=" phase1-"] a:not(:first-child){
+   background: #d1d1d1 !important;
+}
+div[class*=" phase1-"] a:not(:first-child):after {
+     background: #d1d1d1; 
+}
+div[class*=" phase1-"] a:not(:first-child):before {
+     border: 2px solid #fff;
+     color: #fff;
+     background: #d1d1d1;
+}
+
+
+div[class*=" phase2-"] a, div[class*=" phase2-"] a:after{
+     background: #d1d1d1 !important; 
+}
+div[class*=" phase2-"] a:before {
+     border: 2px solid #fff;
+     color: #fff;
+     background: #d1d1d1;
+ }
+div[class*=" phase2-"] a:nth-child(2):before {
+     border: 2px solid #000;
+     color: #000;
+     background: #fff;
+ }
+div[class*=" phase2-"] a:nth-child(2):after, div[class*=" phase2-"] a:nth-child(2){
+     background: #234c8c !important; 
+}
+
+
+
+div[class*=" phase3-"] a, div[class*=" phase3-"] a:after{
+    background: #d1d1d1 !important; 
+}
+div[class*=" phase3-"] a:before {
+    border: 2px solid #fff;
+    color: #fff;
+    background: #d1d1d1;   
+ }
+div[class*=" phase3-"] a:nth-child(3):before {
+     border: 2px solid #000;
+     color: #000;
+     background: #fff;
+ } 
+div[class*=" phase3-"] a:nth-child(3):after, div[class*=" phase3-"] a:nth-child(3){
+    background: #516ba2 !important;
+} 
+
+
+div[class*=" phase4-"] a, div[class*=" phase4-"] a:after{
+    background: #d1d1d1 !important; 
+}
+div[class*=" phase4-"] a:before {
+    border: 2px solid #fff;
+    color: #fff;
+    background: #d1d1d1;
+ }
+div[class*=" phase4-"] a:nth-child(4):before {
+     border: 2px solid #000;
+     color: #000;
+     background: #fff;
+}
+div[class*=" phase4-"] a:nth-child(4):after, div[class*=" phase4-"] a:nth-child(4){
+    background: #9598a2 !important;
+} 
+
+/*
+.phase5 a, .phase5 a:after{
+    background: #d1d1d1 !important; 
+}
+.phase5 a:before {
+    border: 2px solid #fff;
+    color: #fff;
+    background: #d1d1d1;
+ }
+.phase5 a:nth-child(5):after, .phase5 a:nth-child(5){
+    background: #385a99 !important;
+} 
+
+.phase6 a, .phase6 a:after{
+    background: #d1d1d1 !important; 
+}
+.phase6 a:before {
+    border: 2px solid #fff;
+    color: #fff;
+    background: #d1d1d1;
+ }
+.phase6 a:nth-child(6):after, .phase6 a:nth-child(6){
+    background: #516ba2 !important;
+} 
+
+.phase7 a, .phase7 a:after{
+    background: #d1d1d1 !important; 
+}
+.phase7 a:before {
+    border: 2px solid #fff;
+    color: #fff;
+    background: #d1d1d1;
+ }
+.phase7 a:nth-child(7):after, .phase7 a:nth-child(7){
+    background: #7381a1 !important;
+} 
+
+.phase8 a, .phase8 a:after{
+    background: #d1d1d1 !important; 
+}
+.phase8 a:before {
+    border: 2px solid #fff;
+    color: #fff;
+    background: #d1d1d1;
+ }
+.phase8 a:nth-child(8):after, .phase8 a:nth-child(8){
+    background: #9598a2 !important;
+} 
+
+*/
+
+.graphic-fix{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.greybar{
+    width: 97%;
+    max-height: 20px; /* For Firefox - Browsers needs to specify a height */
+    padding: 0;
+    font-size: .65em;
+    font-weight: 600;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 2;
+    margin:10px auto;
+    text-transform: uppercase;
+    border: 1px solid #222;
+    box-shadow: 0px 2px 5px 0px #c3c3c3;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    background-color: #f4f5f5; background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f5f5), to(#dfdddd));
+     background-image: -webkit-linear-gradient(top, #f4f5f5, #dfdddd);
+    background-image: -moz-linear-gradient(top, #f4f5f5, #dfdddd);
+    background-image: -ms-linear-gradient(top, #f4f5f5, #dfdddd);
+    background-image: -o-linear-gradient(top, #f4f5f5, #dfdddd);
+    background-image: linear-gradient(to bottom, #f4f5f5, #dfdddd);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f5f5, endColorstr=#dfdddd);
+}
+
+.greybar div{
+    float: left;
+}
+.greybarslot{
+    border-right: 1px solid #222;
+}
+.greybarslot:nth-child(1){
+    width: 24%;
+    padding: 2px 25px;
+}
+.greybarslot:nth-child(2){
+    width: 48%;
+    padding: 2px 25px;
+}
+.greybarslot:nth-child(3){
+    width: 27%;
+    padding: 2px 45px;
+     border-right: none;
+}
+/*.greybarslot:nth-child(4){
+    width: 22%;
+    padding: 2px 75px;
+    border-right: none;
+}
+*/
+.arrow:before{
+    color: #ccc;
+    content:  "\f105";
+    font-weight: 600;
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 1.875em; 
+    position: relative;
+    top: 6px;
+    left: 10px;
+}
+
+.dotted{
+    position: relative;
+    top: 0;
+    left: -7px;
+    height: 30px;
+    width: 100%;
+    border: 3px dotted #ccc;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.looptxt{
+    position: absolute;
+    top: -15px;
+    right: 170px;
+    font-style: italic;
+    font-size: .80em;
+    background: #fff;
+    padding: 5px 10px;
+    color: #222222;
+}
+/* below ~320px */
+@media only screen and (max-width: 19.95em){
+    .dotted,.greybar{ display: none; }
+    .crumbar{ margin-right:15px; }
+    .crumbar a { width: 100%; height: 46px; }
+    .crumbar a:after {
+      right: -21px;
+      width: 44px;
+      height: 48px;
+      transform: scale(0.707) rotate(45deg);
+      box-shadow: 2px -2px 0 0px rgba(255,255,255,1), 2px -1px 0 0px rgba(255,255,255,0);
+      border-radius: 0 5px 0 60px;
+    }    
+ } 
+
+
+
+/* ~320px to ~480px */
+@media only screen and (min-width: 20em) and (max-width: 30.95em){
+    .dotted,.greybar{ display: none; }
+    .crumbar{ margin-right:15px; }
+    .crumbar a { width: 100%; height: 46px; }
+    .crumbar a:after {
+      right: -21px;
+      width: 44px;
+      height: 48px;
+      transform: scale(0.707) rotate(45deg);
+      box-shadow: 2px -2px 0 0px rgba(255,255,255,1), 2px -1px 0 0px rgba(255,255,255,0);
+      border-radius: 0 5px 0 60px;
+    }    
+ }   
+
+/*** The above media queries provide a good break for chevrons on a mobile phone in a vertical view. 
+/*** Below will be breaks for horitonzal view on a mobile phone or ipad 
+
+/* ~496px to ~696px */
+@media only screen and (min-width: 31em) and (max-width: 43.5em){
+    .dotted,.greybar{ display:none; }
+    .crumbar a {width: 100%; height: 46px; padding: 14px 60px 7px 60px;}
+    .crumbar{ margin-right:20px; }
+    .crumbar a:after {
+      right: -21px;
+      width: 44px;
+      height: 48px;
+      transform: scale(0.707) rotate(45deg);
+      box-shadow: 2px -2px 0 0px rgba(255,255,255,1), 2px -1px 0 0px rgba(255,255,255,0);
+      border-radius: 0 5px 0 60px;
+    }    
+
+}
+
+/* ~697px to ~709px */
+@media only screen and (min-width: 43.5625em) and (max-width: 44.3125em){ 
+    .dotted, .greybar{ display:none;  }
+    .crumbar a {
+      width: 160px;
+      height: 47px;
+      font-size: .70em;
+      padding: 10px 5px 0 25px;
+    }
+   .crumbar a:nth-child(3) {
+      letter-spacing: -0.45px;
+    }
+    .crumbar a:after {
+    right: -21px;
+    width: 44px;
+    height: 48px;
+    transform: scale(0.707) rotate(45deg);
+    box-shadow: 2px -2px 0 0px rgba(255,255,255,1), 2px -1px 0 0px rgba(255,255,255,0);
+    border-radius: 0 5px 0 60px;
+  }    
+
+}
+
+
+/* ~720px to ~767px */
+@media only screen and (min-width: 44.375em) and (max-width: 47.95em){ 
+    .dotted, .greybar{ display:none;  }
+
+    .crumbar a {
+      width: 165px;
+      height: 47px;
+      font-size: .70em;
+      padding: 10px 5px 0 25px;
+    }
+   .crumbar a:nth-child(3) {
+      letter-spacing: -0.45px;
+    }
+    .crumbar a:after {
+    right: -21px;
+    width: 44px;
+    height: 48px;
+    transform: scale(0.707) rotate(45deg);
+    box-shadow: 2px -2px 0 0px rgba(255,255,255,1), 2px -1px 0 0px rgba(255,255,255,0);
+    border-radius: 0 5px 0 60px;
+  }    
+
+}
+
+/* ~768px to 799px*/
+@media only screen and (min-width: 48em) and (max-width: 49.95em){ 
+    .dotted, .greybar{ display:none;  }
+
+    .crumbar a {
+      width: 175px;
+      height: 47px;
+      font-size: .70em;
+      padding: 10px 5px 0 25px;
+    }
+    .crumbar a:nth-child(3) {
+      letter-spacing: -0.45px;
+    }
+    .crumbar a:after {
+    right: -21px;
+    width: 44px;
+    height: 48px;
+    transform: scale(0.707) rotate(45deg);
+    box-shadow: 2px -2px 0 0px rgba(255,255,255,1), 2px -1px 0 0px rgba(255,255,255,0);
+    border-radius: 0 5px 0 60px;
+  }  
+}
+
+/* ~800px to ~809px*/
+@media only screen and (min-width: 50em) and (max-width: 50.5625em){ 
+    .dotted, .greybar{ display:none;  }
+
+    .crumbar a {
+      width: 180px;
+      height: 47px;
+      font-size: .70em;
+      padding: 10px 5px 0 25px;
+    }
+
+   .crumbar a:after {
+      right: -21px;
+      width: 44px;
+      height: 48px;
+      transform: scale(0.707) rotate(45deg);
+      box-shadow: 2px -2px 0 0px rgba(255,255,255,1), 2px -1px 0 0px rgba(255,255,255,0);
+      border-radius: 0 5px 0 60px;
+    }  
+}
+
+/* ~810px to ~836px*/
+@media only screen and (min-width: 50.625em) and (max-width: 63.5em){ 
+    .dotted, .greybar{ display:none;  }
+
+    .crumbar a {
+      width: 190px;
+      height: 47px;
+      font-size: .70em;
+      padding: 10px 5px 0 25px;
+    }
+
+   .crumbar a:after {
+      right: -21px;
+      width: 44px;
+      height: 48px;
+      transform: scale(0.707) rotate(45deg);
+      box-shadow: 2px -2px 0 0px rgba(255,255,255,1), 2px -1px 0 0px rgba(255,255,255,0);
+      border-radius: 0 5px 0 60px;
+    }  
+}
+/* 900px ~ */
+@media only screen and (min-width: 63.5625em) and (max-width: 63.9375em){
+    .crumbar a {
+        padding: 8px 30px 10px 55px;
+        width: 210px;
+        height: 47px;
+    }
+    .greybarslot:nth-child(1) {
+        width: 25%;
+        padding: 2px 15px;
+    }
+    .greybarslot:nth-child(2) {
+        width: 48%;
+        padding: 2px 30px;
+    }
+    .greybarslot:nth-child(3) {
+        width: 22%;
+        padding: 2px 55px;
+        border-right: none;
+    }
+
+}
+
+
+/* 1024px ~ */
+@media only screen and (min-width: 64em) and (max-width: 71.2em){
+    .crumbar a {
+        padding: 8px 30px 10px 55px;
+        width: 240px;
+        height: 47px;
+    }
+    .greybarslot:nth-child(1) {
+        width: 25%;
+        padding: 2px 15px;
+    }
+    .greybarslot:nth-child(2) {
+        width: 48%;
+        padding: 2px 30px;
+    }
+    .greybarslot:nth-child(3) {
+        width: 22%;
+        padding: 2px 55px;
+        border-right: none;
+    }
+
+}
+
+/*** To display Single Hero Image ***/
+.container-hero{ float: left;  height: 420px;  position: relative;}
+.hero-wrapper{ position: relative;  width:100%;}
+/*Alternate style than the fixed bottom style*/
+.hero-wrapper-black-box{ position: absolute; 
+    left: 40px; 
+    bottom: 50px; 
+    width:50%;
+    background-color: #fff;
+    background: none repeat scroll 0 0 rgba(0,0,0,0.7);
+    opacity: 1;
+    border-radius: 4px;
+    padding: 10px 25px;
+}
+h4.hero-light { 
+  font-size: 2.75em; 
+  font-weight: 300; 
+  color: #fff;
+}
+.hero-message{ background-color: #fff;  background: rgba(0,0,0,0.7);  bottom:0px;  left:0;  padding: 10px 25px;  position: absolute;  width:100%;  opacity: 1;}
+.hero-message h4, .hero-message p, .hero-message a{  color: #fff;}
+.hero-message h4{  font-size: 2em !important; line-height: 1 !important; margin-bottom: 4px; font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif; } 
+.hero-message .summary-txt{ margin: .5em 0;  font-size: 1.20em;  line-height: 1.4;}
+.hero-message .link-txt{ display: block;  float: right;  text-transform: uppercase;}
+.hero-message .link-txt:after {content: "\f064";  display: inline-block; font-family: "FontAwesome"; font-size: 1em; padding-left: 5px; color: #fff;}
+
+@media only screen and (max-width: 48em){
+    .container-hero{
+      height: auto
+    }
+    .hero-message h4{
+      font-size: 1em !important;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .hero-message .summary-txt{ margin: 0em;  font-size: .80em;  line-height: 1.4; text-align: center;}
+
+    div.link-txt{
+      display:none !important;
+    }
+
+}
